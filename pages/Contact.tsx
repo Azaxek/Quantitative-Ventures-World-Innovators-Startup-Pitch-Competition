@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, MessageSquare, ExternalLink } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, MessageSquare, ExternalLink, Globe, Cpu } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -13,91 +13,89 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="pt-24 min-h-screen bg-slate-50 pb-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* Info Column */}
-          <div>
-            <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-8 tracking-tight">Pitch <span className="text-blue-600">Enquiries</span></h1>
-            <p className="text-xl text-slate-500 mb-12 max-w-lg leading-relaxed">
-              Have questions about the competition format, eligibility, or judging? Reach out to our organizing committee.
-            </p>
+    <div className="pt-32 min-h-screen pb-24 px-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+        {/* Info Column */}
+        <div className="lg:col-span-5">
+          <h1 className="text-4xl md:text-6xl font-tech font-black text-white mb-8 tracking-tighter leading-none uppercase">
+            PITCH_DATA <br/><span className="text-[#00f3ff] text-glow-cyan">ENQUIRIES</span>
+          </h1>
+          <p className="text-xl text-slate-400 mb-12 font-light leading-relaxed">
+            Direct your technical queries, eligibility checks, and partnership requests to the QVWI Organizing Nodes.
+          </p>
 
-            <div className="space-y-8 mb-16">
-              <div className="flex items-center gap-6 group">
-                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-blue-600 shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
-                  <Mail size={28} />
-                </div>
-                <div>
-                  <span className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Email Support</span>
-                  <a href="mailto:pitch@qvwi-innovators.org" className="text-xl font-bold text-slate-900 hover:text-blue-600 transition-colors">pitch@qvwi-innovators.org</a>
-                </div>
+          <div className="space-y-8 mb-16">
+            <div className="flex items-center gap-6 group">
+              <div className="nm-raised w-16 h-16 rounded-2xl flex items-center justify-center text-cyan-400 border border-white/5 transition-transform group-hover:scale-110">
+                <Mail size={24} />
               </div>
-
-              <div className="flex items-center gap-6 group">
-                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-indigo-600 shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
-                  <Phone size={28} />
-                </div>
-                <div>
-                  <span className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Direct Line</span>
-                  <a href="tel:+15559876543" className="text-xl font-bold text-slate-900 hover:text-blue-600 transition-colors">+1 (555) 987-6543</a>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-6 group">
-                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-cyan-600 shadow-sm border border-slate-100 group-hover:scale-110 transition-transform">
-                  <MapPin size={28} />
-                </div>
-                <div>
-                  <span className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Competition Hub</span>
-                  <span className="text-xl font-bold text-slate-900">Palo Alto, CA 94301, USA</span>
-                </div>
+              <div>
+                <span className="block font-tech text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Comms_Sync</span>
+                <a href="mailto:pitch@qvwi-innovators.org" className="text-lg font-tech font-bold text-white hover:text-cyan-400 transition-colors">PITCH@QVWI.IO</a>
               </div>
             </div>
 
-            <div className="p-8 bg-slate-900 rounded-3xl text-white">
-              <h3 className="text-xl font-bold mb-4 flex items-center gap-2"><MessageSquare className="text-blue-400" /> Pitch Deck Reviews</h3>
-              <p className="text-slate-400 mb-6">Want feedback on your deck before the official submission? Join our pre-pitch workshops.</p>
-              <button className="flex items-center gap-2 text-blue-400 font-bold hover:underline">
-                Register for Workshop <ExternalLink size={16} />
-              </button>
+            <div className="flex items-center gap-6 group">
+              <div className="nm-raised w-16 h-16 rounded-2xl flex items-center justify-center text-[#ff00ff] border border-white/5 transition-transform group-hover:scale-110">
+                <Globe size={24} />
+              </div>
+              <div>
+                <span className="block font-tech text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Global_Hub</span>
+                <span className="text-lg font-tech font-bold text-white">PALO_ALTO_GRID, CA</span>
+              </div>
             </div>
           </div>
 
-          {/* Form Column */}
-          <div className="bg-white rounded-[2.5rem] shadow-xl p-8 md:p-12">
-            <h3 className="text-2xl font-bold text-slate-900 mb-8">Send Organizers a Message</h3>
-            <form onSubmit={handleSubmit}>
-              <div className="mb-6">
-                <label className="block text-sm font-bold text-slate-700 mb-2 uppercase tracking-wide">Full Name</label>
+          <div className="nm-inset p-8 rounded-[2.5rem] border border-white/5 relative overflow-hidden group">
+            <div className="relative z-10">
+              <h3 className="text-xl font-tech font-bold mb-4 flex items-center gap-2 text-white">
+                <Cpu className="text-cyan-400" size={20} /> DECK_REVIEW_API
+              </h3>
+              <p className="text-slate-500 text-sm mb-6 leading-relaxed">
+                Join our pre-pitch synchronization workshops for deep-dive technical reviews of your business model.
+              </p>
+              <button className="flex items-center gap-2 text-cyan-400 font-tech font-bold text-xs uppercase hover:underline">
+                Register_Workshop <ExternalLink size={14} />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Form Column */}
+        <div className="lg:col-span-7">
+          <div className="nm-raised rounded-[4rem] p-10 md:p-16 border border-white/5">
+            <h3 className="text-2xl font-tech font-black text-white mb-10 uppercase tracking-widest underline decoration-cyan-500 underline-offset-8">SEND_DATA_PACKET</h3>
+            <form onSubmit={handleSubmit} className="space-y-8">
+              <div>
+                <label className="block font-tech font-bold uppercase text-[10px] mb-3 text-slate-500 tracking-widest">Identify_Yourself</label>
                 <input
                   required
                   type="text"
-                  className="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                  placeholder="Enter your name"
+                  className="w-full nm-inset p-5 rounded-2xl font-tech text-white focus:outline-none focus:ring-1 focus:ring-cyan-500 border border-white/5"
+                  placeholder="FULL_NAME"
                   value={formState.name}
                   onChange={(e) => setFormState({ ...formState, name: e.target.value })}
                 />
               </div>
 
-              <div className="mb-6">
-                <label className="block text-sm font-bold text-slate-700 mb-2 uppercase tracking-wide">Email Address</label>
+              <div>
+                <label className="block font-tech font-bold uppercase text-[10px] mb-3 text-slate-500 tracking-widest">Return_Address</label>
                 <input
                   required
                   type="email"
-                  className="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                  placeholder="name@startup.com"
+                  className="w-full nm-inset p-5 rounded-2xl font-tech text-white focus:outline-none focus:ring-1 focus:ring-cyan-500 border border-white/5"
+                  placeholder="WORK_EMAIL"
                   value={formState.email}
                   onChange={(e) => setFormState({ ...formState, email: e.target.value })}
                 />
               </div>
 
-              <div className="mb-8">
-                <label className="block text-sm font-bold text-slate-700 mb-2 uppercase tracking-wide">Message</label>
+              <div>
+                <label className="block font-tech font-bold uppercase text-[10px] mb-3 text-slate-500 tracking-widest">Message_Body</label>
                 <textarea
                   required
-                  className="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none h-48 resize-none"
-                  placeholder="How can we help your application?"
+                  className="w-full nm-inset p-5 rounded-2xl font-tech text-white h-48 resize-none focus:outline-none focus:ring-1 focus:ring-cyan-500 border border-white/5"
+                  placeholder="ENQUIRY_DETAILS..."
                   value={formState.message}
                   onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                 ></textarea>
@@ -106,12 +104,14 @@ const Contact: React.FC = () => {
               <button
                 type="submit"
                 disabled={sent}
-                className={`w-full py-5 rounded-2xl font-black text-xl transition-all flex items-center justify-center gap-3 ${
-                  sent ? 'bg-green-600 text-white' : 'bg-slate-900 text-white hover:bg-slate-800'
+                className={`w-full p-8 rounded-[2.5rem] font-tech font-black text-xl transition-all flex items-center justify-center gap-4 ${
+                  sent 
+                    ? 'nm-inset text-green-400 border border-green-500/20' 
+                    : 'nm-btn text-[#00f3ff] border border-cyan-500/30 uppercase tracking-widest'
                 }`}
               >
-                {sent ? 'Message Sent!' : (
-                  <>Send Message <Send size={20} /></>
+                {sent ? 'PACKET_DEBUTED_SUCCESS' : (
+                  <>EXECUTE_SEND <Send size={24} /></>
                 )}
               </button>
             </form>
