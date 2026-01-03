@@ -1,6 +1,7 @@
 
 export interface Winner {
   year: string;
+  competitorCount?: string;
   firstPlace: WinnerDetail;
   secondPlace: WinnerDetail;
   thirdPlace: WinnerDetail;

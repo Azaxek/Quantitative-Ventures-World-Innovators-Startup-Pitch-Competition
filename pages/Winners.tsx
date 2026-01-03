@@ -61,9 +61,8 @@ const Winners: React.FC = () => {
               </div>
             </div>
             
-            <div className="mt-8 pt-6 border-t border-white/5 flex justify-between items-center">
+            <div className="mt-8 pt-6 border-t border-white/5 flex items-center">
               <Trophy className="text-slate-700 group-hover:text-cyan-500 transition-colors" size={24} />
-              <button className="text-[10px] font-tech font-black text-slate-500 hover:text-white uppercase tracking-tighter underline">VIEW_DECK</button>
             </div>
           </div>
         ))}

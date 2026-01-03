@@ -12,6 +12,7 @@ export const NAV_LINKS = [
 export const WINNERS_DATA: Winner[] = [
   {
     year: '2025–2026',
+    competitorCount: '600+',
     firstPlace: { name: 'Aryav Agrawal', funding: '$5,000' },
     secondPlace: { name: 'Siddharth Mehta', funding: '$2,000' },
     thirdPlace: { name: 'Leila Mansour', funding: '$500' },

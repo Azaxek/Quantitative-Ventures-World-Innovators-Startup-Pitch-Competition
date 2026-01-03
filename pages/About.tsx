@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Target, Users, Shield, History, Activity, ShieldCheck } from 'lucide-react';
+import { Target, Users, Shield, History, Activity, ShieldCheck, BarChart3 } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -17,6 +17,24 @@ const About: React.FC = () => {
           </div>
         </div>
       </header>
+
+      {/* Record Scaling Section */}
+      <section className="mb-24">
+        <div className="nm-inset rounded-[3rem] p-10 md:p-16 border border-magenta-500/10 flex flex-col md:flex-row items-center gap-12">
+          <div className="nm-raised p-8 rounded-[2rem] border border-magenta-500/20">
+            <BarChart3 size={48} className="text-[#ff00ff] glow-magenta" />
+          </div>
+          <div>
+            <div className="inline-block px-4 py-1 rounded-full nm-raised border border-cyan-400/20 text-cyan-400 font-tech text-[10px] font-bold mb-4 uppercase tracking-widest">
+              RECORD_SCALING_ALERT
+            </div>
+            <h2 className="text-4xl font-tech font-black text-white mb-4">600+ FOUNDER NODES</h2>
+            <p className="text-lg text-slate-400 font-light leading-relaxed max-w-2xl">
+              The 2025-2026 cohort officially became our largest synchronization event to date, with over 600 global competitors pitching across AI, Orbital Logistics, and Quant-Finance sectors.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-24" aria-label="Core mission values">
         <div className="nm-raised p-10 rounded-[2.5rem] border border-white/5 flex flex-col items-center text-center transition-transform hover:-translate-y-2">

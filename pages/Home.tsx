@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Award, Zap, Globe, Cpu, ChevronRight, Activity } from 'lucide-react';
+import { ArrowRight, Award, Zap, Globe, Cpu, ChevronRight, Activity, Users } from 'lucide-react';
 
 const Home: React.FC = () => {
   return (
@@ -9,8 +9,13 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24 items-center">
         <div className="lg:col-span-7">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full nm-inset text-cyan-400 text-[10px] font-tech font-bold mb-8 border border-cyan-400/10">
-            <Activity size={14} className="animate-pulse" /> SYSTEM_ACTIVE: COHORT_2026
+          <div className="flex flex-wrap gap-3 mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full nm-inset text-cyan-400 text-[10px] font-tech font-bold border border-cyan-400/10">
+              <Activity size={14} className="animate-pulse" /> SYSTEM_ACTIVE: COHORT_2026
+            </div>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full nm-inset text-[#ff00ff] text-[10px] font-tech font-bold border border-[#ff00ff]/10">
+              <Users size={14} /> 600+_COMPETITORS_SYNCED
+            </div>
           </div>
           <h1 className="text-5xl md:text-8xl font-tech font-extrabold leading-none mb-8 tracking-tighter text-white">
             QUANTUM <br/>
@@ -56,7 +61,7 @@ const Home: React.FC = () => {
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
         {[
           { label: 'SEED_CAPITAL', val: '$500K+', icon: <Globe className="text-cyan-400" />, col: 'cyan' },
-          { label: 'FOUNDER_NODES', val: '150+', icon: <Cpu className="text-magenta-400" />, col: 'magenta' },
+          { label: 'FOUNDER_NODES', val: '600+', icon: <Cpu className="text-magenta-400" />, col: 'magenta' },
           { label: 'VC_NETWORK', val: '50+', icon: <Zap className="text-yellow-400" />, col: 'yellow' }
         ].map((item) => (
           <div key={item.label} className="nm-raised rounded-3xl p-10 flex flex-col items-center border border-white/5">
