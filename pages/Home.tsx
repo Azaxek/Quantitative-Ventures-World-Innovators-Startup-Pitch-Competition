@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Award, Zap, Globe, Cpu, ChevronRight, Activity, Users } from 'lucide-react';
+import { ArrowRight, Award, Zap, Globe, Cpu, ChevronRight, Activity, Users, Map } from 'lucide-react';
 
 const Home: React.FC = () => {
   return (
@@ -93,9 +93,9 @@ const Home: React.FC = () => {
               ORBITO<span className="text-cyan-400">NIMICS</span>
             </h3>
             <p className="text-lg text-slate-400 leading-relaxed mb-10 font-light">
-              Founded by <strong>Aryav Agrawal</strong>, Orbitonimics is redefining global safety through orbital data. By mapping 3,000+ disaster regions and establishing 640 safety routes, they are the gold standard for space-integrated business logistics.
+              Founded by <strong>Aryav Agrawal</strong>, Orbitonimics is redefining global safety through orbital data. By mapping 3,000+ disaster regions and establishing 640 safety routes across 3 countries, <strong>he</strong> has set the gold standard for space-integrated business logistics.
             </p>
-            <div className="grid grid-cols-2 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               <div className="nm-inset p-6 rounded-3xl border border-white/5">
                 <p className="font-tech text-[10px] text-slate-500 mb-2 font-bold uppercase tracking-widest">Regions_Mapped</p>
                 <p className="text-3xl font-tech font-black text-[#00f3ff]">3,000+</p>
@@ -103,6 +103,10 @@ const Home: React.FC = () => {
               <div className="nm-inset p-6 rounded-3xl border border-white/5">
                 <p className="font-tech text-[10px] text-slate-500 mb-2 font-bold uppercase tracking-widest">Active_Routes</p>
                 <p className="text-3xl font-tech font-black text-[#ff00ff]">640</p>
+              </div>
+              <div className="nm-inset p-6 rounded-3xl border border-white/5">
+                <p className="font-tech text-[10px] text-slate-500 mb-2 font-bold uppercase tracking-widest">Global_Footprint</p>
+                <p className="text-3xl font-tech font-black text-yellow-400">3_COUNTRIES</p>
               </div>
             </div>
             <Link to="/winners" className="nm-btn inline-flex items-center gap-2 p-4 px-8 rounded-2xl font-tech font-bold text-xs text-white">
