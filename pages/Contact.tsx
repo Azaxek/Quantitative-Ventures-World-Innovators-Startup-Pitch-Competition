@@ -36,6 +36,16 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="flex items-center gap-6 group">
+              <div className="nm-raised w-16 h-16 rounded-2xl flex items-center justify-center text-yellow-400 border border-white/5 transition-transform group-hover:scale-110">
+                <Phone size={24} />
+              </div>
+              <div>
+                <span className="block font-tech text-[10px] font-black text-slate-500 uppercase tracking-widest mb-1">Voice_Link</span>
+                <a href="tel:+16504926288" className="text-lg font-tech font-bold text-white hover:text-yellow-400 transition-colors">+1 (650) 492-6288</a>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-6 group">
               <div className="nm-raised w-16 h-16 rounded-2xl flex items-center justify-center text-[#ff00ff] border border-white/5 transition-transform group-hover:scale-110">
                 <Globe size={24} />
               </div>

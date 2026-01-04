@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Rocket, Twitter, Linkedin, Github, Mail, MapPin } from 'lucide-react';
+import { Rocket, Twitter, Linkedin, Github, Mail, MapPin, Phone } from 'lucide-react';
 import { NAV_LINKS } from '../constants';
 
 const Footer: React.FC = () => {
@@ -58,6 +58,10 @@ const Footer: React.FC = () => {
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-cyan-400" />
                 <span>PITCH@QVWI.IO</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone size={16} className="text-yellow-400" />
+                <span>+1 (650) 492-6288</span>
               </li>
               <li className="flex items-center gap-3">
                 <MapPin size={16} className="text-[#ff00ff]" />
