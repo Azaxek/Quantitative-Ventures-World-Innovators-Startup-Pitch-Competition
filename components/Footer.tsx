@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               {NAV_LINKS.map(link => (
                 <li key={link.href}>
-                  <Link to={link.href} className="font-tech text-xs uppercase text-slate-500 hover:text-white transition-colors tracking-tighter">> {link.label}</Link>
+                  <Link to={link.href} className="font-tech text-xs uppercase text-slate-500 hover:text-white transition-colors tracking-tighter">{" > "} {link.label}</Link>
                 </li>
               ))}
             </ul>
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               {['Manifesto', 'Evaluation_API', 'Seed_Terms', 'Global_Mentors'].map(item => (
                 <li key={item}>
-                  <a href="#" className="font-tech text-xs uppercase text-slate-500 hover:text-white transition-colors tracking-tighter">> {item}</a>
+                  <a href="#" className="font-tech text-xs uppercase text-slate-500 hover:text-white transition-colors tracking-tighter">{" > "} {item}</a>
                 </li>
               ))}
             </ul>

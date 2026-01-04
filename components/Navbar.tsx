@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
               onClick={() => setIsOpen(false)}
               className="block font-tech font-bold text-lg uppercase tracking-widest text-slate-400 hover:text-[#00f3ff]"
             >
-              > {link.label}
+              {" > "} {link.label}
             </Link>
           ))}
           <Link
