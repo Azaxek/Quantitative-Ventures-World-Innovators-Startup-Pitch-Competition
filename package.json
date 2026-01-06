@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "mkdir -p dist && esbuild index.tsx --bundle --outfile=dist/index.js --format=esm --jsx=automatic --loader:.tsx=tsx --loader:.ts=ts --external:react --external:react-dom --external:react-dom/client --external:react-router-dom --external:lucide-react && cp index.html dist/ && cp -r metadata.json dist/ 2>/dev/null || :",
+    "build": "mkdir -p dist && esbuild index.tsx --bundle --outfile=dist/index.js --format=esm --jsx=automatic --loader:.tsx=tsx --loader:.ts=ts --external:react --external:react-dom --external:react-dom/client --external:react-router-dom --external:lucide-react && cp index.html dist/ && cp -r public/* dist/ 2>/dev/null && cp metadata.json dist/ 2>/dev/null || :",
     "start": "esbuild index.tsx --bundle --outfile=index.js --format=esm --jsx=automatic --loader:.tsx=tsx --loader:.ts=ts --external:react --external:react-dom --external:react-dom/client --external:react-router-dom --external:lucide-react --servedir=. --serve=3000"
   },
   "devDependencies": {
