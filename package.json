@@ -1,13 +1,19 @@
-
 {
   "name": "qvwi-pitch-competition",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "mkdir -p dist && esbuild index.tsx --bundle --outfile=dist/index.js --format=esm --jsx=automatic --loader:.tsx=tsx --loader:.ts=ts --external:react --external:react-dom --external:react-dom/client --external:react-router-dom --external:lucide-react && cp index.html dist/ && cp -r metadata.json dist/ 2>/dev/null || :",
-    "start": "esbuild index.tsx --bundle --outfile=index.js --format=esm --jsx=automatic --loader:.tsx=tsx --loader:.ts=ts --external:react --external:react-dom --external:react-dom/client --external:react-router-dom --external:lucide-react --serve=3000"
+    "start": "esbuild index.tsx --bundle --outfile=index.js --format=esm --jsx=automatic --loader:.tsx=tsx --loader:.ts=ts --external:react --external:react-dom --external:react-dom/client --external:react-router-dom --external:lucide-react --servedir=. --serve=3000"
   },
   "devDependencies": {
-    "esbuild": "^0.24.0"
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "esbuild": "^0.24.0",
+    "lucide-react": "^0.562.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.11.0"
   }
 }

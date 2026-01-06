@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Target, Users, Shield, History, Activity, ShieldCheck, BarChart3 } from 'lucide-react';
+import { Target, Users, History, ShieldCheck, BarChart3 } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -93,7 +93,7 @@ const About: React.FC = () => {
             <div className="font-tech text-slate-500 font-black text-2xl mb-4">SYNC_CURRENT</div>
             <h3 className="text-xl font-tech font-bold text-white mb-4 uppercase">Global_Standard_Protocol</h3>
             <p className="text-slate-400 font-light leading-relaxed max-w-3xl">
-              Today, the Quantitative Ventures World Innovators Startup Pitch Competition is a premiere global event, with alumni like Aryav Agrawal setting orbital standards.
+              Today, the Quantitative Ventures World Innovators Startup Pitch Competition is a premiere global event, with a new generation of founders setting orbital standards.
             </p>
           </div>
         </div>

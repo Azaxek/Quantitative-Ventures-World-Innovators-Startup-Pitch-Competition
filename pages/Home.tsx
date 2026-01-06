@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Award, Zap, Globe, Cpu, ChevronRight, Activity, Users, Map } from 'lucide-react';
+import { ArrowRight, Award, Zap, Globe, Cpu, ChevronRight, Activity, Users, Map, Camera } from 'lucide-react';
 
 const Home: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ const Home: React.FC = () => {
             </div>
           </div>
           <h1 className="text-5xl md:text-8xl font-tech font-extrabold leading-none mb-8 tracking-tighter text-white">
-            QUANTUM <br/>
+            QUANTUM <br />
             <span className="text-[#00f3ff] text-glow-cyan italic">VENTURES</span>
           </h1>
           <p className="text-xl md:text-2xl font-light text-slate-400 mb-12 leading-relaxed border-l-4 border-[#ff00ff]/30 pl-8 max-w-2xl">
@@ -41,18 +41,18 @@ const Home: React.FC = () => {
         </div>
         <div className="lg:col-span-5 relative">
           <div className="nm-raised rounded-[3rem] p-4 border border-white/10 rotate-3">
-             <div className="relative overflow-hidden rounded-[2.5rem] h-80 md:h-[500px] border-2 border-cyan-500/20">
-                <img 
-                  src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" 
-                  className="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-700 scale-110"
-                  alt="Cyber Earth"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0b10] via-transparent to-transparent"></div>
-                <div className="absolute bottom-6 left-6 nm-inset p-4 rounded-2xl backdrop-blur-md border border-cyan-400/20">
-                   <p className="font-tech text-xs text-cyan-400 mb-1 font-bold">LATEST_DEPLOYMENT</p>
-                   <p className="font-tech text-xl text-white font-black">ORBITONIMICS_MAPS</p>
-                </div>
-             </div>
+            <div className="relative overflow-hidden rounded-[2.5rem] h-80 md:h-[500px] border-2 border-cyan-500/20">
+              <img
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200"
+                className="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-700 scale-110"
+                alt="Cyber Earth"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0b10] via-transparent to-transparent"></div>
+              <div className="absolute bottom-6 left-6 nm-inset p-4 rounded-2xl backdrop-blur-md border border-cyan-400/20">
+                <p className="font-tech text-xs text-cyan-400 mb-1 font-bold">LATEST_SUMMIT</p>
+                <p className="font-tech text-xl text-white font-black">2025_GLOBAL_FINALS</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
         ].map((item) => (
           <div key={item.label} className="nm-raised rounded-3xl p-10 flex flex-col items-center border border-white/5">
             <div className="nm-inset p-4 rounded-2xl mb-6">
-               {item.icon}
+              {item.icon}
             </div>
             <h2 className="text-5xl font-tech font-black text-white mb-2">{item.val}</h2>
             <p className="font-tech text-xs tracking-widest text-slate-500 font-bold uppercase">{item.label}</p>
@@ -78,39 +78,62 @@ const Home: React.FC = () => {
       <section className="mb-24">
         <div className="nm-raised rounded-[4rem] overflow-hidden flex flex-col lg:flex-row border border-white/5">
           <div className="lg:w-2/5 h-[400px] lg:h-auto relative">
-            <img 
-              src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&q=80&w=800"
+            <img
+              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800"
               className="w-full h-full object-cover opacity-50 contrast-125"
-              alt="Orbital View"
+              alt="Collaboration"
             />
             <div className="absolute inset-0 bg-cyan-900/10 mix-blend-overlay"></div>
           </div>
           <div className="lg:w-3/5 p-10 md:p-20 relative">
             <div className="inline-block px-4 py-1 rounded-full nm-inset border border-magenta-500/20 text-[#ff00ff] font-tech text-[10px] font-bold mb-6">
-              CASE_STUDY: ARYAV_AGRAWAL
+              PROTOCOL_OVERVIEW
             </div>
             <h3 className="text-4xl md:text-6xl font-tech font-black text-white mb-8 leading-tight">
-              ORBITO<span className="text-cyan-400">NIMICS</span>
+              WORLD_INNO<span className="text-cyan-400">VATORS</span>
             </h3>
             <p className="text-lg text-slate-400 leading-relaxed mb-10 font-light">
-              Founded by <strong>Aryav Agrawal</strong>, Orbitonimics is redefining global safety through orbital data. By mapping 3,000+ disaster regions and establishing 640 safety routes across 3 countries, <strong>he</strong> has set the gold standard for space-integrated business logistics.
+              The Quantitative Ventures World Innovators (QVWI) Startup Pitch Competition is a high-fidelity global stage designed to bridge the gap between technical mastery and venture capital. We seek founders who are redefining the frontiers of space-tech, AI, and business logistics through rigorous engineering and scalable architectural integrity.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              <div className="nm-inset p-6 rounded-3xl border border-white/5">
-                <p className="font-tech text-[10px] text-slate-500 mb-2 font-bold uppercase tracking-widest">Regions_Mapped</p>
-                <p className="text-3xl font-tech font-black text-[#00f3ff]">3,000+</p>
-              </div>
-              <div className="nm-inset p-6 rounded-3xl border border-white/5">
-                <p className="font-tech text-[10px] text-slate-500 mb-2 font-bold uppercase tracking-widest">Active_Routes</p>
-                <p className="text-3xl font-tech font-black text-[#ff00ff]">640</p>
-              </div>
-              <div className="nm-inset p-6 rounded-3xl border border-white/5">
-                <p className="font-tech text-[10px] text-slate-500 mb-2 font-bold uppercase tracking-widest">Global_Footprint</p>
-                <p className="text-3xl font-tech font-black text-yellow-400">3_COUNTRIES</p>
+
+            {/* Enlarged 2025 Competition Image */}
+            <div className="mb-12 group">
+              <div className="nm-raised p-2 rounded-[2.5rem] border border-white/5 overflow-hidden">
+                <div className="flex items-center gap-3 mb-4 px-6 pt-4">
+                  <Camera className="text-[#ff00ff]" size={20} />
+                  <span className="font-tech text-xs font-bold text-slate-500 uppercase tracking-widest text-[#ff00ff]">Live_Archive_2025</span>
+                </div>
+                <div className="rounded-[2rem] overflow-hidden nm-inset p-2 border border-white/10 relative">
+                  <img
+                    src="/image8.png"
+                    alt="2025 Competition"
+                    className="w-full h-[400px] object-cover rounded-[1.5rem] opacity-90 group-hover:opacity-100 transition-all duration-700 grayscale-[20%] group-hover:grayscale-0"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                </div>
+                <div className="mt-4 px-6 pb-4">
+                  <p className="font-tech text-[10px] text-slate-600 uppercase leading-relaxed text-center">
+                    Visual log: Networking terminal during the 2025 Global Finals sync.
+                  </p>
+                </div>
               </div>
             </div>
-            <Link to="/winners" className="nm-btn inline-flex items-center gap-2 p-4 px-8 rounded-2xl font-tech font-bold text-xs text-white">
-              VIEW_ALL_NODES <ChevronRight size={16} />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              <div className="nm-inset p-6 rounded-3xl border border-white/5">
+                <p className="font-tech text-[10px] text-slate-500 mb-2 font-bold uppercase tracking-widest">Core_Value_01</p>
+                <p className="text-2xl font-tech font-black text-[#00f3ff]">INNOVATION</p>
+              </div>
+              <div className="nm-inset p-6 rounded-3xl border border-white/5">
+                <p className="font-tech text-[10px] text-slate-500 mb-2 font-bold uppercase tracking-widest">Core_Value_02</p>
+                <p className="text-2xl font-tech font-black text-[#ff00ff]">INTEGRITY</p>
+              </div>
+              <div className="nm-inset p-6 rounded-3xl border border-white/5">
+                <p className="font-tech text-[10px] text-slate-500 mb-2 font-bold uppercase tracking-widest">Core_Value_03</p>
+                <p className="text-2xl font-tech font-black text-yellow-400">VELOCITY</p>
+              </div>
+            </div>
+            <Link to="/about" className="nm-btn inline-flex items-center gap-2 p-4 px-8 rounded-2xl font-tech font-bold text-xs text-white">
+              LEARN_MORE <ChevronRight size={16} />
             </Link>
           </div>
         </div>
