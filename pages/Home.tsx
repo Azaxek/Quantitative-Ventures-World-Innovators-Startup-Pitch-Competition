@@ -11,7 +11,7 @@ const Home: React.FC = () => {
         <div className="lg:col-span-7">
           <div className="flex flex-wrap gap-3 mb-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full nm-inset text-cyan-400 text-[10px] font-tech font-bold border border-cyan-400/10">
-              <Activity size={14} className="animate-pulse" /> SYSTEM_ACTIVE: COHORT_2026
+              <Activity size={14} className="animate-pulse" /> SYSTEM_ACTIVE: 2026
             </div>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full nm-inset text-[#ff00ff] text-[10px] font-tech font-bold border border-[#ff00ff]/10">
               <Users size={14} /> 600+_COMPETITORS_SYNCED

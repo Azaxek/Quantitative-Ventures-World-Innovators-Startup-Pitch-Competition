@@ -32,7 +32,7 @@ const Winners: React.FC = () => {
               The 2025 Quantitative Ventures World Innovators Startup Pitch Competition served as a high-fidelity global stage for technical founders navigating the frontiers of space-tech and high-stakes business systems.
             </p>
             <p>
-              Our mission is to identify and accelerate entrepreneurs with deep domain expertise, bridging the gap between advanced engineering and venture capital injection. The 2025 cohort saw record participation, with over 600 global nodes syncing from major tech hubs across the Americas, South Asia, and the Middle East.
+              Our mission is to identify and accelerate entrepreneurs with deep domain expertise, bridging the gap between advanced engineering and venture capital injection. The 2025 competition results saw record participation, with over 600 global nodes syncing from major tech hubs across the Americas, South Asia, and the Middle East.
             </p>
             <p>
               As we archive this year's successes, we transition focus toward the 2026 synchronization event, maintaining our commitment to founders who prioritize technological depth and scalable architectural integrity.
@@ -44,7 +44,7 @@ const Winners: React.FC = () => {
               <Trophy className="text-[#00f3ff] glow-cyan" size={24} />
               <div>
                 <h4 className="font-tech font-bold text-white uppercase text-xs">SEED_ALGORITHMS_EXECUTED</h4>
-                <p className="text-[10px] text-slate-500 font-tech">Aggregate capital injection for 2025 cohort finalized.</p>
+                <p className="text-[10px] text-slate-500 font-tech">Aggregate capital injection for 2025 competition results finalized.</p>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ const Winners: React.FC = () => {
                 <div className="nm-inset p-3 rounded-xl">
                   <Award className="text-[#ff00ff] glow-magenta" size={24} />
                 </div>
-                <span className="font-tech font-black text-white uppercase tracking-widest text-lg">2025_COHORT_RESULTS</span>
+                <span className="font-tech font-black text-white uppercase tracking-widest text-lg">2025_COMPETITION_RESULTS</span>
               </div>
 
               <div className="space-y-8">

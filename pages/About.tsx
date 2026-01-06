@@ -30,7 +30,7 @@ const About: React.FC = () => {
             </div>
             <h2 className="text-4xl font-tech font-black text-white mb-4">600+ FOUNDER NODES</h2>
             <p className="text-lg text-slate-400 font-light leading-relaxed max-w-2xl">
-              The 2025-2026 cohort officially became our largest synchronization event to date, with over 600 global competitors pitching across AI, Orbital Logistics, and Quant-Finance sectors.
+              The 2025-2026 competition officially became our largest synchronization event to date, with over 600 global competitors pitching across AI, Orbital Logistics, and Quant-Finance sectors.
             </p>
           </div>
         </div>
