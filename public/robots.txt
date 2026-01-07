@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://quantitativeventuresworldinnovatorsstartuppitchcompetition.com/sitemap.xml
