@@ -77,15 +77,7 @@ const Home: React.FC = () => {
       {/* Featured Founder Spotlight */}
       <section className="mb-24">
         <div className="nm-raised rounded-[4rem] overflow-hidden flex flex-col lg:flex-row border border-white/5">
-          <div className="lg:w-2/5 h-[400px] lg:h-auto relative">
-            <img
-              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800"
-              className="w-full h-full object-cover opacity-50 contrast-125"
-              alt="Collaboration"
-            />
-            <div className="absolute inset-0 bg-cyan-900/10 mix-blend-overlay"></div>
-          </div>
-          <div className="lg:w-3/5 p-10 md:p-20 relative">
+          <div className="w-full p-10 md:p-20 relative">
             <div className="inline-block px-4 py-1 rounded-full nm-inset border border-magenta-500/20 text-[#ff00ff] font-tech text-[10px] font-bold mb-6">
               PROTOCOL_OVERVIEW
             </div>
@@ -107,7 +99,7 @@ const Home: React.FC = () => {
                   <img
                     src="/image8.png"
                     alt="2025 Competition"
-                    className="w-full h-[400px] object-cover rounded-[1.5rem] opacity-90 group-hover:opacity-100 transition-all duration-700 grayscale-[20%] group-hover:grayscale-0"
+                    className="w-full h-[600px] object-cover rounded-[1.5rem] opacity-90 group-hover:opacity-100 transition-all duration-700 grayscale-[20%] group-hover:grayscale-0"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
